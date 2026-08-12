@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/dependency-review-action@v4
         with:
-          base-ref: 81dca95f0608
+          base-ref: 84451ba47d15
           head-ref: ${{ github.event.pull_request.head.sha }}
