@@ -2,7 +2,6 @@
   "name": "b221",
   "version": "1.0.0",
   "dependencies": {
-    "minimist": "0.0.8",
-    "b221-evil-marker-pkg": "9.9.9"
+    "lodash": "4.17.21"
   }
 }
