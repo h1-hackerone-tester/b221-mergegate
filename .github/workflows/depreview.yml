@@ -1,0 +1,14 @@
+name: depreview
+on: pull_request
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+        with:
+          base-ref: 81dca95f0608
+          head-ref: ${{ github.event.pull_request.head.sha }}
